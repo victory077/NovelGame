@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<RootNamespace></RootNamespace>
+	<ProjectGuid>{CF3C95E4-D29F-B640-1A4B-3F249658EFB8}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_5_2_2;UNITY_5_2;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_REFLECTION_BUFFERS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;UNITY_STANDALONE_OSX;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_LOG_MIXED_STACKTRACE;ENABLE_UNITYWEBREQUEST;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\JOKER\Scripts\Novel\Components\AnimComponent.cs" />
+     <Compile Include="Assets\JOKER\Scripts\Novel\Components\AudioComponent.cs" />
+     <Compile Include="Assets\JOKER\Scripts\Novel\Components\BgComponent.cs" />
+     <Compile Include="Assets\JOKER\Scripts\Novel\Components\ButtonComponent.cs" />
+     <Compile Include="Assets\JOKER\Scripts\Novel\Components\CharaComponent.cs" />
+     <Compile Include="Assets\JOKER\Scripts\Novel\Components\ClickableComponent.cs" />
+     <Compile Include="Assets\JOKER\Scripts\Novel\Components\Components.cs" />
+     <Compile Include="Assets\JOKER\Scripts\Novel\Components\Doc.cs" />
+     <Compile Include="Assets\JOKER\Scripts\Novel\Components\EventComponent.cs" />
+     <Compile Include="Assets\JOKER\Scripts\Novel\Components\ImageComponent.cs" />
+     <Compile Include="Assets\JOKER\Scripts\Novel\Components\Live2dComponent.cs" />
+     <Compile Include="Assets\JOKER\Scripts\Novel\Components\MenuComponent.cs" />
+     <Compile Include="Assets\JOKER\Scripts\Novel\Components\MessageComponent.cs" />
+     <Compile Include="Assets\JOKER\Scripts\Novel\Components\SaveComponent.cs" />
+     <Compile Include="Assets\JOKER\Scripts\Novel\Components\SdComponentScript.cs" />
+     <Compile Include="Assets\JOKER\Scripts\Novel\Components\SystemComponent.cs" />
+     <Compile Include="Assets\JOKER\Scripts\Novel\Components\TextComponent.cs" />
+     <Compile Include="Assets\JOKER\Scripts\Novel\Core\AudioManager.cs" />
+     <Compile Include="Assets\JOKER\Scripts\Novel\Core\Enum.cs" />
+     <Compile Include="Assets\JOKER\Scripts\Novel\Core\EventManager.cs" />
+     <Compile Include="Assets\JOKER\Scripts\Novel\Core\GameManager.cs" />
+     <Compile Include="Assets\JOKER\Scripts\Novel\Core\GameSetting.cs" />
+     <Compile Include="Assets\JOKER\Scripts\Novel\Core\GameView.cs" />
+     <Compile Include="Assets\JOKER\Scripts\Novel\Core\ImageManager.cs" />
+     <Compile Include="Assets\JOKER\Scripts\Novel\Core\LogManager.cs" />
+     <Compile Include="Assets\JOKER\Scripts\Novel\Core\NovelSingleton.cs" />
+     <Compile Include="Assets\JOKER\Scripts\Novel\Core\SaveManager.cs" />
+     <Compile Include="Assets\JOKER\Scripts\Novel\Core\ScenarioManager.cs" />
+     <Compile Include="Assets\JOKER\Scripts\Novel\Core\StatusManager.cs" />
+     <Compile Include="Assets\JOKER\Scripts\Novel\Core\Validate.cs" />
+     <Compile Include="Assets\JOKER\Scripts\Novel\Libs\ColorConverter.cs" />
+     <Compile Include="Assets\JOKER\Scripts\Novel\Libs\GuiScaler.cs" />
+     <Compile Include="Assets\JOKER\Scripts\Novel\Libs\MiniJSON.cs" />
+     <Compile Include="Assets\JOKER\Scripts\Novel\Libs\RPNParser.cs" />
+     <Compile Include="Assets\JOKER\Scripts\Novel\Libs\iTween.cs" />
+     <Compile Include="Assets\JOKER\Scripts\Novel\ObjectSet\AbstractObject.cs" />
+     <Compile Include="Assets\JOKER\Scripts\Novel\ObjectSet\ButtonObject.cs" />
+     <Compile Include="Assets\JOKER\Scripts\Novel\ObjectSet\ClickableObject.cs" />
+     <Compile Include="Assets\JOKER\Scripts\Novel\ObjectSet\ImageObject.cs" />
+     <Compile Include="Assets\JOKER\Scripts\Novel\ObjectSet\Live2dObject.cs" />
+     <Compile Include="Assets\JOKER\Scripts\Novel\ObjectSet\SdObject.cs" />
+     <Compile Include="Assets\JOKER\Scripts\Novel\ObjectSet\TextObject.cs" />
+     <Compile Include="Assets\JOKER\Scripts\Novel\SceneInit.cs" />
+     <Compile Include="Assets\JOKER\Scripts\Novel\System\FileManager.cs" />
+     <Compile Include="Assets\JOKER\Scripts\Novel\System\Parser.cs" />
+     <Compile Include="Assets\JOKER\Scripts\Novel\Unity\AnimationEvent.cs" />
+     <Compile Include="Assets\JOKER\Scripts\Novel\Unity\Backlog.cs" />
+     <Compile Include="Assets\JOKER\Scripts\Novel\Unity\CameraUtility.cs" />
+     <Compile Include="Assets\JOKER\Scripts\Novel\Unity\CanvasLog.cs" />
+     <Compile Include="Assets\JOKER\Scripts\Novel\Unity\CloseButton.cs" />
+     <Compile Include="Assets\JOKER\Scripts\Novel\Unity\JokerSetting.cs" />
+     <Compile Include="Assets\JOKER\Scripts\Novel\Unity\MessageArea.cs" />
+     <Compile Include="Assets\JOKER\Scripts\Novel\Unity\MessageFrame.cs" />
+     <Compile Include="Assets\JOKER_GAME\Plugins\PluginComponent.cs" />
+     <None Include="Assets\JOKER_GAME\Resources\novel\data\scenario\wide\ichijouhou.txt" />
+     <None Include="Assets\JOKER_GAME\Resources\novel\data\scenario\wide\libs\utils.txt" />
+     <None Include="Assets\JOKER_GAME\Resources\novel\data\scenario\tall\libs\utils.txt" />
+     <None Include="Assets\JOKER_GAME\Resources\novel\data\scenario\wide\nottori.txt" />
+     <None Include="Assets\JOKER_GAME\Resources\novel\data\scenario\wide\libs\save.txt" />
+     <None Include="Assets\JOKER_GAME\Resources\novel\data\scenario\wide\title.txt" />
+     <None Include="Assets\JOKER_GAME\Resources\novel\data\scenario\wide\Cookie.txt" />
+     <None Include="Assets\JOKER_GAME\Resources\novel\data\scenario\tall\libs\save.txt" />
+     <None Include="Assets\JOKER_GAME\Resources\novel\data\scenario\wide\IPAdress.txt" />
+     <None Include="Assets\JOKER_GAME\Resources\novel\data\scenario\tall\title.txt" />
+     <None Include="Assets\JOKER_GAME\Resources\novel\data\scenario\tall\system.txt" />
+     <None Include="Assets\JOKER_GAME\Resources\novel\data\scenario\wide\scene1.txt" />
+     <None Include="Assets\JOKER_GAME\Resources\novel\data\scenario\wide\system.txt" />
+     <None Include="Assets\JOKER_GAME\Resources\novel\data\scenario\wide\libs\menu.txt" />
+     <None Include="Assets\JOKER_GAME\Resources\novel\data\scenario\first.txt" />
+     <None Include="Assets\JOKER_GAME\Resources\novel\data\scenario\tall\libs\menu.txt" />
+     <None Include="Assets\JOKER_GAME\Resources\novel\data\scenario\tall\scene1.txt" />
+     <None Include="Assets\JOKER_GAME\Resources\novel\data\config\config.txt" />
+     <None Include="Assets\JOKER_GAME\Resources\novel\data\scenario\wide\tokutei.txt" />
+ <Reference Include="UnityEngine.Advertisements">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="LitJson">
+ <HintPath>/Users/okinatina/testing/Assets/Plugins/JOKER/LitJson.dll</HintPath>
+ </Reference>
+ <Reference Include="NCalc">
+ <HintPath>/Users/okinatina/testing/Assets/Plugins/JOKER/NCalc.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+ <HintPath>/Applications/Unity/Unity.app/Contents/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

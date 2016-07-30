@@ -1,0 +1,61 @@
+;チュートリアル用スクリプトファイル
+
+;メッセージ表示
+[showmessage]
+
+;共通ライブラリ
+
+;ゲーム作成で便利なマクロ集
+[call file=wide/libs/utils]
+[text_new name=_sp_chara_name layer=ui x="-168" y=-108.5 val="" color="DDFF00" fontsize=16 anchor="MiddleLeft"]
+[text_show name="_sp_chara_name"]
+
+[bg_new storage="room"]
+[bg_show ]
+[wait time=0.5]
+
+[select_new text=“SNS編” target=*select_a1 ]
+[select_new text=“Web編” target=*select_a2 ]
+
+[select_show sound=click ]
+
+[s]
+
+*select_a1
+
+[select_new text=“乗っ取り” target=*select_b1 ]
+
+[select_new text=“特定” target=*select_b2 ]
+
+[select_show sound=click ]
+
+[s]
+
+*select_b1
+
+@jump file="wide/nottori"
+
+*select_b2
+
+@jump file="wide/tokutei" 
+
+*select_a2
+
+[select_new text=“Cookie” target=*select_c1 ]
+
+[select_new text=“位置情報サービス” target=*select_c2 ]
+
+[select_new text=“IPアドレス” target=*select_c3 ]
+
+[select_show sound=click ]
+
+[s]
+
+*select_c1
+@jump file="wide/Cookie"
+*select_c2
+@jump file="wide/ichijouhou" 
+
+*select_c3
+@jump file="wide/IPAdress"
+
